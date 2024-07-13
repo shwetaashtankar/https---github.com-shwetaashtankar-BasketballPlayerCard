@@ -1,0 +1,71 @@
+
+.player-card {
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 7px 5px 5px #000;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .player-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .player-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color:  #f3ebeb;
+  }
+  
+  .player-position {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #4d4b4b;
+  }
+  
+   .player-stats {
+    margin-top: 20px;
+  }
+  
+  
+  .player-stats p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #9b9a9a;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .player-card {
+      padding: 15px;
+    }
+  
+    .player-image {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .player-name {
+      font-size: 1.3em;
+    }
+  
+    .player-position {
+      font-size: 1em;
+    }
+  
+    .player-stats p {
+      font-size: 0.9em;
+    }
+  }
+  

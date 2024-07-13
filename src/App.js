@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css'; // Link to your CSS file
+import BasketballPlayerCard from './components/BasketballPlayerCard';
+import dummyImage from './image/dummy.jpg';
 
-function App() {
+export function App() {
+  const lebronImage = 'https://example.com/lebron.jpg';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Basket-Ball Player Card</h1>
+        <BasketballPlayerCard 
+        name="LeBron James"
+        image={lebronImage}
+        dummy={dummyImage}
+        position="Forward"
+        stats={{ pointsPerGame: 25.4, assistsPerGame: 7.1, reboundsPerGame: 10.5 }}
+      />
     </div>
   );
 }
